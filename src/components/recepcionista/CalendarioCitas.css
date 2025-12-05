@@ -1,0 +1,19 @@
+.calendar-container { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.calendar-header { display: flex; justify-content: space-between; margin-bottom: 20px; align-items: center; }
+.calendar-header h2 { color: #008CB1; margin: 0; }
+.nav-btn { background: #e0f7fa; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer; font-size: 1.2rem; transition: 0.2s; }
+.nav-btn:hover { background: #b2ebf2; transform: scale(1.1); }
+
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.day-header { text-align: center; font-weight: bold; color: #666; padding: 10px; }
+.calendar-day { border: 1px solid #eee; min-height: 100px; border-radius: 8px; padding: 5px; transition: 0.3s; }
+.calendar-day:hover { box-shadow: 0 0 10px rgba(0,0,0,0.1); transform: translateY(-2px); border-color: #008CB1; }
+.day-num { font-weight: bold; color: #333; margin-bottom: 5px; display: block; }
+
+.event-pill { font-size: 0.75rem; padding: 2px 5px; border-radius: 4px; margin-bottom: 2px; color: white; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.programada { background: #3498db; }
+.completada { background: #2ecc71; }
+.cancelada { background: #e74c3c; }
+
+.fade-in { animation: fadeIn 0.5s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
